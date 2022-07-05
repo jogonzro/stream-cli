@@ -11,22 +11,22 @@ console = Console()
 
 def get_top(choice):
     choices = {
-        1: apprun(torrent_galaxy()),
-        2: apprun(leet()),
+        1: app_run(torrent_galaxy()),
+        2: app_run(leet()),
     }
     return choices[choice]
 
 
 def get_movie(choice):
     choices = {
-        1: apprun(torrent_galaxy("movie")),
-        2: apprun(leet("movie")),
+        1: app_run(torrent_galaxy("movie")),
+        2: app_run(leet("movie")),
     }
     return choices[choice]
 
 
 def get_serie(choice):
-    choices = {1: apprun(torrent_galaxy("serie")), 2: apprun(leet("serie"))}
+    choices = {1: app_run(torrent_galaxy("serie")), 2: app_run(leet("serie"))}
     return choices[choice]
 
 
